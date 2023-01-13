@@ -5,11 +5,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .banner-image{ 
+      width: 128px;
+      height: 128px;
+      border-radius: 128px;
+    }
+    
+    .banner{
+      display: flex;
+      justify-content: center;
+    }
+
+    .thumbnails{
+      width: 48px;
+     height: 48px;
+     border-radius: 48px;
+     object-fit: cover;
+    }
+    body{
+      background-color: #eaddcf;
+      display: flex;
+      justify-content: center;
+    }
+    .name{
+      color: #272343;
+      display: flex;
+      justify-content: center;
+    }
+    .social-icons a{
+      color: #272343;
+      text-decoration: none;
+    }
+
+    .social-icons{
+      display: flex;
+      justify-content: space-around;
+    }
+
+     .links{
+      background-color: #8bd3dd;
+      display: flex;
+      align-items: center;
+      border-radius: 25px;
+     }
+    
+     .links a{
+      color: #272343 ;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+      padding: 5px;
+     }
+     .items{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+     }
+
+     
+
+  </style>
 </head>
 <body>
-
+<div class="items">
   <div class="banner"> 
-    <img src="/thumbnails/FaceShot.png" height="400" width="500">
+    <img src="/thumbnails/FaceShot.png" class="banner-image">
   </div>
 
   <div class="name"> Sebastian Gomez </div>
@@ -18,21 +86,22 @@
     <a href="https://github.com/sebgomez2023">Github</a>
     <a href="https://www.linkedin.com/in sebastian-gomez-0163181ba/">LinkedIn</a>
   </div>
-<div class="links">
-  <img src="/thumbnails/openai.jpg" height="400" width="500"> 
-  <a href="https://openai.com">OpenAI</a>
 
-<div class="links"></div>
-  <img src="/thumbnails/biotech.jpg" height="400" width="500">
-  <a href="https://endpts.com/">Endpoints Biotech</a>
+  <div class="links">
+    <img src="/thumbnails/openai.jpg" class="thumbnails"> 
+    <a href="https://openai.com">OpenAI</a>
+  </div>  
+
+  <div class="links">
+    <img src="/thumbnails/biotech.jpg" class="thumbnails">
+    <a href="https://endpts.com/">Endpoints Biotech</a>
+  </div>
+
+  <div class="links">
+    <img src="/thumbnails/allin.jpg" class="thumbnails">
+    <a href="https://www.allinpodcast.co/">All-In Podcast</a>
+  </div>
 </div>
-
-<div class="links"></div>
-  <img src="/thumbnails/allin.jpg" height="401" width="500">
-  <a href="https://www.allinpodcast.co/">All-In Podcast</a>
-</div>
-
-
 
 </div>
 </body>
